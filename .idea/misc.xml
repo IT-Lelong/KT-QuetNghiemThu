@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/vt_quyen/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_dropdown_item.xml" value="0.371875" />
+        <entry key="..\:/Users/vt_quyen/Desktop/APP THU NGHIEM/TEST PDA quet phat lieu/PDA/app/src/main/res/drawable-v24/page_mode_sample_shape.xml" value="0.2885" />
+        <entry key="..\:/Users/vt_quyen/Desktop/APP THU NGHIEM/TEST PDA quet phat lieu/PDA/app/src/main/res/drawable/button_type1.xml" value="0.3255" />
+        <entry key="..\:/Users/vt_quyen/Desktop/APP THU NGHIEM/TEST PDA quet phat lieu/PDA/app/src/main/res/drawable/button_type_nomal.xml" value="0.3255" />
+        <entry key="..\:/Users/vt_quyen/Desktop/APP THU NGHIEM/TEST PDA quet phat lieu/PDA/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/vt_quyen/Desktop/APP THU NGHIEM/TEST PDA quet phat lieu/PDA/app/src/main/res/layout/activity_menu.xml" value="0.371875" />
+        <entry key="..\:/Users/vt_quyen/Desktop/APP THU NGHIEM/TEST PDA quet phat lieu/PDA/app/src/main/res/layout/activity_qr210_dialog01.xml" value="0.2078125" />
+        <entry key="..\:/Users/vt_quyen/Desktop/APP THU NGHIEM/TEST PDA quet phat lieu/PDA/app/src/main/res/layout/activity_qr210_dialog01_view.xml" value="0.21770833333333334" />
+        <entry key="..\:/Users/vt_quyen/Desktop/APP THU NGHIEM/TEST PDA quet phat lieu/PDA/app/src/main/res/layout/activity_qr210_view01.xml" value="0.33" />
+        <entry key="..\:/Users/vt_quyen/Desktop/APP THU NGHIEM/TEST PDA quet phat lieu/PDA/app/src/main/res/layout/activity_qr230.xml" value="0.3341708542713568" />
+        <entry key="..\:/Users/vt_quyen/Desktop/APP THU NGHIEM/TEST PDA quet phat lieu/PDA/app/src/main/res/layout/activity_qrcode_print.xml" value="0.2390625" />
+        <entry key="..\:/Users/vt_quyen/Desktop/APP THU NGHIEM/TEST PDA quet phat lieu/PDA/app/src/main/res/layout/dialog_page_mode_sample.xml" value="0.2078125" />
+        <entry key="..\:/Users/vt_quyen/Desktop/APP THU NGHIEM/TEST PDA quet phat lieu/PDA/app/src/main/res/layout/qrcode_print_dialog01.xml" value="0.2078125" />
+        <entry key="..\:/Users/vt_quyen/Desktop/APP THU NGHIEM/TEST PDA quet phat lieu/PDA/app/src/main/res/layout/qrcode_print_listview.xml" value="0.2078125" />
+        <entry key="..\:/Users/vt_quyen/Desktop/APP THU NGHIEM/TEST PDA quet phat lieu/PDA/app/src/main/res/xml/provider_paths.xml" value="0.23489583333333333" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA - KUNG TAY/PDA - quet phat lieu/PDA quet phat lieu/PDA/app/src/main/res/layout/activity_main.xml" value="0.2942708333333333" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA - KUNG TAY/PDA - quet phat lieu/PDA quet phat lieu/PDA/app/src/main/res/layout/activity_menu.xml" value="0.33" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA - KUNG TAY/PDA - quet phat lieu/PDA quet phat lieu/PDA/app/src/main/res/layout/activity_qr210_dialog01.xml" value="0.25" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA - KUNG TAY/PDA - quet phat lieu/PDA quet phat lieu/PDA/app/src/main/res/layout/activity_qr210_dialog01_view.xml" value="0.5" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA - KUNG TAY/PDA - quet phat lieu/PDA quet phat lieu/PDA/app/src/main/res/layout/activity_qr210_view01.xml" value="0.2078125" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA - KUNG TAY/PDA - quet phat lieu/PDA quet phat lieu/PDA/app/src/main/res/layout/activity_qr230.xml" value="0.2942708333333333" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA quet phat lieu/PDA quet phat lieu/PDA/app/src/main/res/layout/activity_main.xml" value="0.209375" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA quet phat lieu/PDA/app/src/main/res/drawable/button_type1.xml" value="0.1635" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA quet phat lieu/PDA/app/src/main/res/drawable/button_type_nomal.xml" value="0.1635" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA quet phat lieu/PDA/app/src/main/res/layout/activity_main.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA quet phat lieu/PDA/app/src/main/res/layout/activity_menu.xml" value="0.31666666666666665" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA quet phat lieu/PDA/app/src/main/res/layout/activity_qr210.xml" value="0.2375" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA quet phat lieu/PDA/app/src/main/res/layout/activity_qr210_dialog01.xml" value="0.2375" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA quet phat lieu/PDA/app/src/main/res/layout/activity_qr210_dialog01_view.xml" value="0.2375" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA quet phat lieu/PDA/app/src/main/res/layout/activity_qr210_view01.xml" value="0.2375" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA quet phat lieu/PDA/app/src/main/res/layout/activity_qr230.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA quet phat lieu/PDA/app/src/main/res/layout/activity_qr231.xml" value="0.25" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA quet phat lieu/PDA/app/src/main/res/layout/activity_qrcode_print.xml" value="0.2375" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA quet phat lieu/PDA/app/src/main/res/layout/dialog_page_mode_sample.xml" value="0.2375" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA quet phat lieu/PDA/app/src/main/res/layout/qrcode_print_dialog01.xml" value="0.2375" />
+        <entry key="..\:/Users/vt_quyen/Desktop/PDA quet phat lieu/PDA/app/src/main/res/layout/qrcode_print_listview.xml" value="0.2375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

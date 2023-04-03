@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     EditText editID, editPassword;
     CheckBox onlinecheck, SaveCheck;
     TextView tv_ver;
-    String g_server = "PHP_KT";
+    String g_server = "PHPtest_KT";
     Locale locale;
     String ID, PASSWORD;
     String TABLE_NAME = "acc_table";

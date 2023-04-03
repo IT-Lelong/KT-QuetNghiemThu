@@ -75,7 +75,7 @@
     <string name="qr230_head1">Mã phiếu\nphát liệu</string>
     <string name="qr230_title1">S\nT\nT</string>
     <string name="qr230_title2">MVL-Tên\nQuy cách</string>
-    <string name="qr230_title3">Số Lô\nSL phải quét\nSL đã quét</string>
+    <string name="qr230_title3">Số Lô\nSL phải quét\nSL đã quét\nSL chưa quét</string>
     <string name="qr230_btn01">Tải lên\nhệ thống</string>
     <string name="qr230_btn02">Xóa\ntất cả</string>
     /* message_qr230 */

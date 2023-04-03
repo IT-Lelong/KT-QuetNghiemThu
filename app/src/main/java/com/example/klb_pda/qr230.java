@@ -501,7 +501,7 @@ public class qr230 extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             //new_02100376D1_20230308P2_261.6
-            String g_code = "";
+            String g_code = "new_02200402B5_20230308P2_161.62587";
             if(!g_code.equals("")) {
                 updatedetail(g_code);
             }
@@ -511,7 +511,7 @@ public class qr230 extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             //head1.getText().toString().trim()
-            String g_sfb01= "";
+            String g_sfb01= "CC532-2212000002";
             if(!g_sfb01.equals("")){updateData(g_sfb01);}
         }
     };
@@ -765,8 +765,8 @@ public class qr230 extends AppCompatActivity {
             DataOutputStream writer = new DataOutputStream(os);
             Cursor c = db.getall();
             Cursor c1 = db.getallb();
-            JSONArray jarray = cur2Json(c);
-            JSONArray jarray1 = cur2Json(c1);
+            JSONArray jarray = cur2Json(c,"qr230_table");
+            JSONArray jarray1 = cur2Json(c1,"qr230b_table");
             JSONObject jobejct = new JSONObject();
             jobejct.put("QR_IMN07", ID);
             jobejct.put("QR_IMN01", head1.getText());
@@ -857,10 +857,10 @@ public class qr230 extends AppCompatActivity {
                 SimpleCursorAdapter adapter = new SimpleCursorAdapter(this,
                         R.layout.activity_qr210_view01,
                         cursor,
-                        new String[]{"qr230_01", "qr230_02", "qr230_03", "qr230_04", "qr230_05", "qr230_09", "qr230_10", "qr230_11", "qr230_11"},
+                        new String[]{"qr230_01", "qr230_02", "qr230_03", "qr230_04", "qr230_05", "qr230_09", "qr230_10", "qr230_11", "qr230_11", "total" , "qr230_11"},
                         new int[]{R.id.qr210_view01_item01, R.id.qr210_view01_item02, R.id.qr210_view01_item03,
                                 R.id.qr210_view01_item04, R.id.qr210_view01_item05, R.id.qr210_view01_item06,
-                                R.id.qr210_view01_item07, R.id.qr210_view01_item08, R.id.qr210_view01_item09}, 0);
+                                R.id.qr210_view01_item07, R.id.qr210_view01_item08, R.id.qr210_view01_item09,R.id.qr210_view01_item10,R.id.qr210_view01_item11}, 0);
 
                 adapter.setViewBinder(new SimpleCursorAdapter.ViewBinder() {
                     @Override
@@ -871,6 +871,10 @@ public class qr230 extends AppCompatActivity {
                             return true;
                         }
                         if (columnIndex == 5) {
+                            textView.setText(String.valueOf(decimalFormat.format(cursor.getDouble(columnIndex))));
+                            return true;
+                        }
+                        if (columnIndex == 12) {
                             textView.setText(String.valueOf(decimalFormat.format(cursor.getDouble(columnIndex))));
                             return true;
                         }
@@ -918,7 +922,7 @@ public class qr230 extends AppCompatActivity {
     }
 
     //Cursor 轉 Json
-    public JSONArray cur2Json(Cursor cursor) {
+    public JSONArray cur2Json(Cursor cursor,String name_table) {
         JSONArray resultSet = new JSONArray();
         cursor.moveToFirst();
         while (cursor.isAfterLast() == false) {
@@ -927,8 +931,28 @@ public class qr230 extends AppCompatActivity {
             for (int i = 0; i < totalColumn; i++) {
                 if (cursor.getColumnName(i) != null) {
                     try {
-                        rowObject.put(cursor.getColumnName(i),
-                                cursor.getString(i));
+                        //GET DOUBLE cột số thâp phân
+                        if (name_table.equals("qr230_table"))
+                        {
+                            if(i== 3 || i==4|| i== 5)
+                            {
+                                rowObject.put(cursor.getColumnName(i),cursor.getDouble(i));
+                            }
+                            else {
+                                rowObject.put(cursor.getColumnName(i),cursor.getString(i));
+                            }
+                        }
+                        else
+                        {
+                            if(i== 4)
+                            {
+                                rowObject.put(cursor.getColumnName(i),cursor.getDouble(i));
+                            }
+                            else {
+                                rowObject.put(cursor.getColumnName(i),cursor.getString(i));
+                            }
+                        }
+
                     } catch (Exception e) {
                     }
                 }

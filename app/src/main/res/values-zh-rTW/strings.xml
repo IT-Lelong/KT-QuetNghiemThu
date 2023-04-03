@@ -75,7 +75,7 @@
     <string name="qr230_head1">發料單號</string>
     <string name="qr230_title1">項次</string>
     <string name="qr230_title2">品號-名稱\n規格</string>
-    <string name="qr230_title3">批號\n應掃數量\n已掃數量</string>
+    <string name="qr230_title3">批號\n應掃數量\n已掃數量\n未掃數量</string>
     <string name="qr230_btn01">上傳</string>
     <string name="qr230_btn02">清除</string>
 

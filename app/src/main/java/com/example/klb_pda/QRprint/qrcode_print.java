@@ -1086,6 +1086,7 @@ public class qrcode_print extends AppCompatActivity  {
             Cursor g_cursor = db.sum_qrb03("Y");
             g_cursor.moveToFirst();
             sumY = Double.parseDouble(g_cursor.getString(g_cursor.getColumnIndex("SUMQRB03"))); //條碼總數
+            //sumY= Double.valueOf(decimalFormat.format(g_cursor.getDouble(g_cursor.getColumnIndex("SUMQRB03"))));
             if (sumY > val_edt3) {
                 res = "FAIL";
             }
@@ -1099,7 +1100,7 @@ public class qrcode_print extends AppCompatActivity  {
             countY = Integer.parseInt(g_cursor.getString(g_cursor.getColumnIndex("COUNTQRB05"))); //條碼隻數
             countN = val_edt4 - countY;
 
-            tt_slpb = val_edt3 - sumY; //再分攤數量
+            tt_slpb = Double.valueOf(decimalFormat.format((val_edt3 - sumY))); //再分攤數量
             slpb = Double.valueOf(Math.ceil(tt_slpb / countN));
             db.recal(countN, tt_slpb, slpb);
         } catch (Exception e) {

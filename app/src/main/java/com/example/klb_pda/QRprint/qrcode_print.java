@@ -1086,7 +1086,6 @@ public class qrcode_print extends AppCompatActivity  {
             Cursor g_cursor = db.sum_qrb03("Y");
             g_cursor.moveToFirst();
             sumY = Double.parseDouble(g_cursor.getString(g_cursor.getColumnIndex("SUMQRB03"))); //條碼總數
-            //sumY= Double.valueOf(decimalFormat.format(g_cursor.getDouble(g_cursor.getColumnIndex("SUMQRB03"))));
             if (sumY > val_edt3) {
                 res = "FAIL";
             }

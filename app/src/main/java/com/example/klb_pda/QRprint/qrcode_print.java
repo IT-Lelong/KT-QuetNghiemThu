@@ -239,7 +239,7 @@ public class qrcode_print extends AppCompatActivity  {
         mBixolonPrinter.findBluetoothPrinters();
 
         Locale locale = new Locale("en", "EN");
-        String pattern = "###,###,###.##";
+        String pattern = "###,###,###.######";
         decimalFormat = (DecimalFormat) NumberFormat.getNumberInstance(locale);
         decimalFormat.applyPattern(pattern);
     }
@@ -1085,7 +1085,7 @@ public class qrcode_print extends AppCompatActivity  {
         try {
             Cursor g_cursor = db.sum_qrb03("Y");
             g_cursor.moveToFirst();
-            sumY = Double.parseDouble(g_cursor.getString(g_cursor.getColumnIndex("SUMQRB03"))); //條碼總數
+            sumY = g_cursor.getDouble(g_cursor.getColumnIndex("SUMQRB03")); //條碼總數
             if (sumY > val_edt3) {
                 res = "FAIL";
             }
@@ -1142,7 +1142,6 @@ public class qrcode_print extends AppCompatActivity  {
             } else {
                 return false;
             }
-
         } catch (Exception e) {
             return false;
         }
@@ -1246,6 +1245,10 @@ public class qrcode_print extends AppCompatActivity  {
                         TextView textView = (TextView) view;
                         if (columnIndex == 6) {
                             textView.setText(String.valueOf(decimalFormat.format(cursor.getInt(columnIndex))));
+                            return true;
+                        }
+                        if (columnIndex == 4) {
+                            textView.setText(String.valueOf(decimalFormat.format(cursor.getDouble(columnIndex))));
                             return true;
                         }
                         return false;

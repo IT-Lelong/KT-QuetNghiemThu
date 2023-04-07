@@ -135,7 +135,7 @@ public class qr230 extends AppCompatActivity {
         list01.setOnItemClickListener(lsit01listener);
 
         Locale locale = new Locale("en", "EN");
-        String pattern = "###,###,###.##";
+        String pattern = "###,###,###.######";
         decimalFormat = (DecimalFormat) NumberFormat.getNumberInstance(locale);
         decimalFormat.applyPattern(pattern);
 
@@ -265,7 +265,7 @@ public class qr230 extends AppCompatActivity {
                                 String g_res5 = jsonObject.getString("SMD06"); //目的單位數量 Số lượng đơn vị đích
                                 String g_res6 = jsonObject.getString("SMD03"); //目的單位 Đơn vị đích
                                 String g_res7 = jsonObject.getString("IMA63_FAC"); //轉換率 Tỷ lệ chuyển đổi phát liệu
-                                g_Soluong = jsonObject.getDouble("SL"); //已換算數量 SL đã quy đổi
+                                g_Soluong =jsonObject.getDouble("SL"); //已換算數量 SL đã quy đổi
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
@@ -501,7 +501,7 @@ public class qr230 extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             //new_02100376D1_20230308P2_261.6
-            String g_code = "new_02200402B5_20230308P2_161.62587";
+            String g_code = "";
             if(!g_code.equals("")) {
                 updatedetail(g_code);
             }
@@ -511,7 +511,7 @@ public class qr230 extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             //head1.getText().toString().trim()
-            String g_sfb01= "CC532-2212000002";
+            String g_sfb01= "";
             if(!g_sfb01.equals("")){updateData(g_sfb01);}
         }
     };
